@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% block title %} Registration{% endblock %}
+
+{% block content%}
+<header id="head">
+    <a href="/" class="logo"><img src="{{url_for('static', filename='images/logon-removebg-preview.png')}}"/></a>
+    <div class="top-bt">
+        <a href="/sign-in" id="btn-header"> Sign in</a>
+    </div>
+</header>
+
+<div class="new-section">
+<div class="bod">
+    <div class="image">
+        <img src="{{url_for('static', filename='images/Devices.png')}}"/>
+    </div>
+    <div class="txt">
+        <p>STEP 1 OF 3</p>
+        <h3> Finish setting up your account</h3> 
+        <p> Netflix is personalized for you. Create a password to watch on any device at any time.</p>
+    <a href="/regform"><button>NEXT</button> </a></div>
+</div> </div>
+
+
+
+<link
+        rel="stylesheet"
+        type="text/css"
+        href="{{ url_for('static', filename='styles/registration.css') }}">
+{% endblock %}

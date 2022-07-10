@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color: black;
+    --second-color: rgb(201, 2, 2);
+    --text-color: white;
+    --big-font: 4rem;
+    --h2-font: 3.2rem;
+    --p-font: 1rem;
+}
+
+body {
+    color: var(--text-color);
+    background: var(--bg-color);
+    background-color: rgba(0,0,0,0.6);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 20px 8%;
+    transition: all .35s ease;
+    box-shadow: 5px 50px 100px black inset;
+    background-color: rgba(0, 0, 0, .6);
+    height: auto;
+}
+
+
+.logo img {
+    max-width: 100%;
+    width: 150px;
+    height: auto;
+}
+
+.top-btn a{
+    display: inline-block;
+    background-color: var(--second-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+section {
+    padding: 80px 8%;
+    background-color: black;
+}
+
+.home {
+    height: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .6);
+    height: auto;
+}
+
+.home-text{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.home-text h1{
+    text-align: center;
+    font-size: var(--big-font);
+    font-weight: 600;
+    padding-top: 30px;
+}
+
+.home-text p{
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.home-text p:last-child{
+    font-size: 19px;
+    padding-top: 40px;
+}
+
+.home-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.in{
+    width: 450px;
+    height: 60px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+
+#email {
+    width: 450px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.home-button button {
+    font-size: 26px;
+    background-color: var(--second-color);
+    color: var(--text-color);
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all .40s ease;
+    margin-right: 20px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.home-button button:hover {
+    background-color: red;
+}
+
+.enjoy {
+    padding: 80px 10%;
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+}
+
+.enjoy-text p{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.enjoy-text p:last-child{
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.faq-item{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.faq-body{
+    display: none;
+    margin-top: 30px;
+}
+
+.faq-wrapper{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.faq-inner{
+    padding: 30px;
+    background: grey;
+}
+.faq-plus{
+    float: right;
+    font-size: 1.4em;
+    line-height: 1em;
+    cursor: pointer;
+}
+
+.header{
+    padding:10px 0px;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.faq-body.open {
+    top: 100%;
+}

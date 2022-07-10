@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device, initial-scale=1" />
+        <title>{% block title %} Base {% endblock %}</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script type="text/javascript" src="{{ url_for('static', filename='jquery-3.6.0.js') }}"></script>
+    </head>
+    <body style="background-image: url({{url_for('static', filename='images/netflix.jpg')}});">
+        {% block content %}
+        {% endblock %}
+        <!-- <header>
+            <a href="#" class="logo"><img src="{{url_for('static', filename='images/logon.jfif')}}"/></a>
+            <div class="top-btn">
+                <a href="/sign-in" id="btn-header"> Sign in</a>
+            </div>
+        </header> -->
+
+        <!-- home -->
+      <!--  <section class="home" id="home">
+            <div class="home-text">
+            
+            
+                <h1> Unlimited movies, TV<br/>
+                    shows, and more.</h1>
+                <p> Watch anywhere. Cancel anytime.</p>
+                <p> Ready to watch? Enter your email to create or restart your membership.</p>
+            </div>
+            <div class="home-button">
+                <input type="text" class="form-control" id="email" name="email" placeholder="Email Address"/>
+                <button>Get Started</button>
+            </div>
+        </section> -->
+
+        <link
+        rel="stylesheet"
+        type="text/css"
+        href="{{ url_for('static', filename='styles/styles.css') }}">
+
+        <link
+        rel="stylesheet"
+        type="text/css"
+        href="{{ url_for('static', filename='styles/signin.css') }}">
+
+        <script
+            type="text/javascript"
+            src="{{ url_for('static', filename='index.js') }}"> 
+        </script>
+        
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body> </html>
+
+        <!-- <section class="enjoy" id="about">
+            <div class="enjoy-text">
+                <p>
+                    Enjoy on your TV.
+                </p>
+                <p>Watch on Smart TVs, Playstation, Xbox,<br/> Chromecast, Apple TV, Blu-ray players, and<br/> more</p>
+            </div>
+            <div class="enjoy-img">
+                <img src="{{url_for('static', filename='images/tv.png')}}">
+            </div>
+        </section>
+
+        <section class="enjoy" id="about">
+            <div class="enjoy-img">
+                <img src="{{url_for('static', filename='images/mobile-0819.jpg')}}">
+            </div>
+
+            <div class="enjoy-text">
+                <p>
+                    Download your shows<br/> to watch offline.
+                <p>Save your favorites easily and always have <br/> something to watch.</p>
+            </div>
+        </section>
+
+        <section class="enjoy" id="about">
+            <div class="enjoy-text">
+                <p>
+                    Watch everywhere.
+                <p>Stream unlimited movies and TV shows on<br/> your phone, tablet, laptop, and TV.</p>
+            </div>
+        </section>
+
+        <section class="enjoy" id="about">
+            <div class="enjoy-img">
+                <img src="{{url_for('static', filename='images/kids.png')}}">
+            </div>
+
+            <div class="enjoy-text">
+                <p>
+                    Create profiles for kids.
+                <p>Send kids on adventures with their favorite<br/> characters in a space made just for them—<br/>free with your membership.</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="faq-wrapper">
+                <div class="header">
+                    <h1> Frequently Asked Questions</h1>
+                </div>
+                <div class="faq-inner">
+                    <div class="faq-item">
+                        <h3> What is Netflix?<span class="faq-plus"> &plus;</span></h3>
+                        <div class="faq-body">
+                                Netflix is a streaming service that offers a wide variety of 
+                                award-winning TV shows, movies, anime, documentaries, and
+                                more on thousands of internet-connected devices.
+
+                                You can watch as much as you want, whenever you want 
+                                without a single commercial – all for one low monthly price.
+                                There's always something new to discover and new TV shows 
+                                and movies are added every week!
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="faq-item">
+                        <h3> What is Netflix?<span class="faq-plus"> &plus;</span></h3>
+                        <div class="faq-body">
+                                Netflix is a streaming service that offers a wide variety of 
+                                award-winning TV shows, movies, anime, documentaries, and
+                                more on thousands of internet-connected devices.
+
+                                You can watch as much as you want, whenever you want 
+                                without a single commercial – all for one low monthly price.
+                                There's always something new to discover and new TV shows 
+                                and movies are added every week!
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="faq-item">
+                        <h3> What is Netflix?<span class="faq-plus"> &plus;</span></h3>
+                        <div class="faq-body">
+                                Netflix is a streaming service that offers a wide variety of 
+                                award-winning TV shows, movies, anime, documentaries, and
+                                more on thousands of internet-connected devices.
+
+                                You can watch as much as you want, whenever you want 
+                                without a single commercial – all for one low monthly price.
+                                There's always something new to discover and new TV shows 
+                                and movies are added every week!
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="faq-item">
+                        <h3> What is Netflix?<span class="faq-plus"> &plus;</span></h3>
+                        <div class="faq-body">
+                                Netflix is a streaming service that offers a wide variety of 
+                                award-winning TV shows, movies, anime, documentaries, and
+                                more on thousands of internet-connected devices.
+
+                                You can watch as much as you want, whenever you want 
+                                without a single commercial – all for one low monthly price.
+                                There's always something new to discover and new TV shows 
+                                and movies are added every week!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <link
+        rel="stylesheet"
+        type="text/css"
+        href="{{ url_for('static', filename='styles/styles.css') }}">
+
+        <script
+            type="text/javascript"
+            src="{{ url_for('static', filename='index.js') }}"> 
+        </script>
+        
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+
+</html> -->

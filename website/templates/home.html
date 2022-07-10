@@ -1,0 +1,133 @@
+{% extends "base.html" %} {% block title %} Home {% endblock %}
+{% block content %}
+        <!-- home -->
+        <header>
+            <a href="/" class="logo"><img src="{{url_for('static', filename='images/logon.jfif')}}"/></a>
+            <div class="top-btn">
+                <a href="/sign-in" id="btn-header"> Sign in</a>
+            </div>
+        </header>
+        
+        <section class="home" id="home">
+            <div class="home-text">
+                <h1> Unlimited movies, TV<br/>
+                    shows, and more.</h1>
+                <p> Watch anywhere. Cancel anytime.</p>
+                <p> Ready to watch? Enter your email to create or restart your membership.</p>
+            </div>
+            <div class="home-button">
+                <div class="in"><input type="text" class="form-control" id="email" name="email" placeholder="Email Address"/></div>
+                <a href='/registration'><button>Get Started</button> </a>
+            </div>
+        </section>
+
+        <section class="enjoy" id="about">
+            <div class="enjoy-text">
+                <p>
+                    Enjoy on your TV.
+                </p>
+                <p>Watch on Smart TVs, Playstation, Xbox,<br/> Chromecast, Apple TV, Blu-ray players, and<br/> more</p>
+            </div>
+            <div class="enjoy-img">
+                <img src="{{url_for('static', filename='images/tv.png')}}">
+            </div>
+        </section>
+
+        <section class="enjoy" id="about">
+            <div class="enjoy-img">
+                <img src="{{url_for('static', filename='images/mobile-0819.jpg')}}">
+            </div>
+
+            <div class="enjoy-text">
+                <p>
+                    Download your shows<br/> to watch offline.
+                <p>Save your favorites easily and always have <br/> something to watch.</p>
+            </div>
+        </section>
+
+        <section class="enjoy" id="about">
+            <div class="enjoy-text">
+                <p>
+                    Watch everywhere.
+                <p>Stream unlimited movies and TV shows on<br/> your phone, tablet, laptop, and TV.</p>
+            </div>
+        </section>
+
+        <section class="enjoy" id="about">
+            <div class="enjoy-img">
+                <img src="{{url_for('static', filename='images/kids.png')}}">
+            </div>
+
+            <div class="enjoy-text">
+                <p>
+                    Create profiles for kids.
+                <p>Send kids on adventures with their favorite<br/> characters in a space made just for them—<br/>free with your membership.</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="faq-wrapper">
+                <div class="header">
+                    <h1> Frequently Asked Questions</h1>
+                </div>
+                <div class="faq-inner">
+                    <div class="faq-item">
+                        <h3> What is Netflix?<span class="faq-plus"> &plus;</span></h3>
+                        <div class="faq-body">
+                                Netflix is a streaming service that offers a wide variety of 
+                                award-winning TV shows, movies, anime, documentaries, and
+                                more on thousands of internet-connected devices.
+
+                                You can watch as much as you want, whenever you want 
+                                without a single commercial – all for one low monthly price.
+                                There's always something new to discover and new TV shows 
+                                and movies are added every week!
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="faq-item">
+                        <h3> What is Netflix?<span class="faq-plus"> &plus;</span></h3>
+                        <div class="faq-body">
+                                Netflix is a streaming service that offers a wide variety of 
+                                award-winning TV shows, movies, anime, documentaries, and
+                                more on thousands of internet-connected devices.
+
+                                You can watch as much as you want, whenever you want 
+                                without a single commercial – all for one low monthly price.
+                                There's always something new to discover and new TV shows 
+                                and movies are added every week!
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="faq-item">
+                        <h3> What is Netflix?<span class="faq-plus"> &plus;</span></h3>
+                        <div class="faq-body">
+                                Netflix is a streaming service that offers a wide variety of 
+                                award-winning TV shows, movies, anime, documentaries, and
+                                more on thousands of internet-connected devices.
+
+                                You can watch as much as you want, whenever you want 
+                                without a single commercial – all for one low monthly price.
+                                There's always something new to discover and new TV shows 
+                                and movies are added every week!
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="faq-item">
+                        <h3> What is Netflix?<span class="faq-plus"> &plus;</span></h3>
+                        <div class="faq-body">
+                                Netflix is a streaming service that offers a wide variety of 
+                                award-winning TV shows, movies, anime, documentaries, and
+                                more on thousands of internet-connected devices.
+
+                                You can watch as much as you want, whenever you want 
+                                without a single commercial – all for one low monthly price.
+                                There's always something new to discover and new TV shows 
+                                and movies are added every week!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {% endblock %}

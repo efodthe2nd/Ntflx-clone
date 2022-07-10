@@ -1,0 +1,63 @@
+{% extends "base.html" %} {% block content %}
+
+
+<header>
+    <a href="/" class="logo"><img src="{{url_for('static', filename='images/logon.jfif')}}"/></a>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for message in messages %}
+                {% if category == 'error' %}
+                    <div class="alert alert-danger alert-dismissable fade show" role="alert">
+                        {{message}}
+                         <button type="button" class="close" data-dismiss="alert">
+                            <span aria-hidden = "true">&times;</span>
+                        </button>
+                    </div>
+        {% else %}
+        <div class="alert alert-success alert-dismissable fade show" role="alert">
+            {{message}}
+             <button type="button" class="close" data-dismiss="alert">
+                <span aria-hidden = "true">&times;</span>
+            </button>
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+</header>
+
+<div class="sectionn">
+    <div class="section">
+    <form method="POST">
+            <h1> Sign In</h1>
+            <div class ='inp'>
+                <input type="email" type="number" class="form" id="emailll" name="email" placeholder="Email or phonenumber" /> 
+           </div> 
+                <input type="password" class="form" id="password" name="password" placeholder="Enter Password" />
+            <button type="submit" class="btns">Sign In</button> 
+    </form>
+    <div class="after">
+       <p> <input type="checkbox" name="check" id="check" /> Remember Me </p>
+       <p> Need Help?</p> </div>
+
+       <div class="later"><h3> New To Netflix? <b><a style="color: white;" href="/regform">Sign Up Now</a></b></h3>
+       <p> This page is protected by Google reCAPTCHA to <br/>
+        ensure you're not a bot.<a href="#"> Learn more.</a></p>
+    </div>
+    </div>
+</div> 
+
+
+
+
+
+
+
+
+
+<!--<link
+        rel="stylesheet"
+        type="text/css"
+        href="{{ url_for('static', filename='styles/signin.css') }}">
+-->
+{% endblock %}

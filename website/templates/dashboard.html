@@ -1,0 +1,41 @@
+{% extends "base.html" %} {% block title %}Browse {% endblock %}
+
+{% block content %} 
+
+<header class="browse-header">
+    <a href="/" class="logo"><img src="{{url_for('static', filename='images/logon.jfif')}}"/></a>
+ </header>
+ <div class="browse-body">
+    <div class="browse-container">
+<h1> Who's Watching?</h1>
+
+ <div class="profiles">
+    <div class="prof">
+        <a href="#" class="prof"><img  src="{{url_for('static', filename='images/b.png')}}"/></a>
+        <p>Me</p>
+    </div>
+   <div class="prof">
+    <a href="#" class="prof"><img  src="{{url_for('static', filename='images/yellow.png')}}"/></a>
+    <p>Ama</p>
+    </div>
+   <div class="prof">
+    <a href="#" class="prof"><img  src="{{url_for('static', filename='images/red.png')}}"/></a>
+    <p>Ezekiel</p>
+    </div>
+   <div class="prof">
+    <a href="#" class="prof"><img  src="{{url_for('static', filename='images/kidsl.png')}}"/></a>
+     <p>Ledel</p>
+    </div>
+ </div>
+ </div> </div>
+
+
+
+
+
+
+ <link
+ rel="stylesheet"
+ type="text/css"
+ href="{{ url_for('static', filename='styles/browse.css') }}">
+{% endblock %}

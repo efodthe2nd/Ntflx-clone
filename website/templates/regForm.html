@@ -1,0 +1,58 @@
+{% extends 'base.html' %} {% block title %} Registration Form{% endblock %}
+
+{% block content%}
+<header id="head">
+    <a href="#" class="logo"><img src="{{url_for('static', filename='images/logon-removebg-preview.png')}}"/></a>
+    <div class="top-bt">
+        <a href="/sign-in" id="btn-header"> Sign in</a>
+    </div>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for message in messages %}
+                {% if category == 'error' %}
+                    <div class="alert alert-danger alert-dismissable fade show" role="alert">
+                        {{message}}
+                         <button type="button" class="close" data-dismiss="alert">
+                            <span aria-hidden = "true">&times;</span>
+                        </button>
+                    </div>
+        {% else %}
+        <div class="alert alert-success alert-dismissable fade show" role="alert">
+            {{message}}
+             <button type="button" class="close" data-dismiss="alert">
+                <span aria-hidden = "true">&times;</span>
+            </button>
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+</header>
+
+<div class="new-section">
+<div class="bod">
+    <div class="image">
+        <img src="{{url_for('static', filename='images/Devices.png')}}"/>
+    </div>
+    <div class="txt">
+        <p>STEP <b>2</b> OF <b>3</b></p>
+        <h3> Create a password to start your membership</h3> 
+        <p> Just a few more steps and you're done!<br/>
+            We hate paperwork, too.</p>
+            <form method="POST">
+                <div class="input-fields">
+                    <input type="email" id="email." name="email" class="frm" placeholder="Email" required/>
+                    <input type="password" id="password." name="password" class="frm" placeholder="Add A Password" required/>
+                    <p><input type="checkbox"/>Please do not email me Netflix special offers. </p>
+                </div>
+                <button type="submit">NEXT</button>
+            </form> </div>
+</div> </div>
+
+
+
+<link
+        rel="stylesheet"
+        type="text/css"
+        href="{{ url_for('static', filename='styles/regForm.css') }}">
+{% endblock %}
